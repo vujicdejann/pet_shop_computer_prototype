@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>Petshop Portal | Izmena proizvoda </title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Search Wrapper Area Start -->
+    <div class="search-wrapper section-padding-100">
+        <div class="search-close">
+            <i class="fa fa-close" aria-hidden="true"></i>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="search-content">
+                        <form action="#" method="get">
+                            <input type="search" name="search" id="search" placeholder="Pretraži proizvode...">
+                            <button type="submit"><img src="img/core-img/search.png" alt=""></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search Wrapper Area End -->
+
+    <!-- ##### Main Content Wrapper Start ##### -->
+    <div class="main-content-wrapper d-flex clearfix">
+
+        <!-- Mobile Nav (max width 767px)-->
+        <div class="mobile-nav">
+            <!-- Navbar Brand -->
+            <div class="amado-navbar-brand">
+                <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+            </div>
+            <!-- Navbar Toggler -->
+            <div class="amado-navbar-toggler">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+
+        <!-- Header Area Start -->
+        <header class="header-area clearfix">
+            <!-- Close Icon -->
+            <div class="nav-close">
+                <i class="fa fa-close" aria-hidden="true"></i>
+            </div>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+            </div>
+            <!-- Amado Nav -->
+            <nav class="amado-nav">
+                <ul>
+                    <li><a href="index.html">Početna strana</a></li>
+                    <li><a href="shop.html">Proizvodi</a></li>
+                    <li><a href="about-us.html">O nama</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                    <li class="active"><a href="login.html"><strong>Zdravo, Dejan</strong></a></li>
+                </ul>
+            </nav>
+            <!-- Button Group -->
+            <div class="amado-btn-group mt-30 mb-100">
+                <a href="#" class="btn amado-btn mb-15">Akcije</a>
+                <a href="#" class="btn amado-btn active">Novi proizvodi</a>
+            </div>
+            <!-- Cart Menu -->
+            <div class="cart-fav-search mb-100">
+                <a href="cart.html" class="cart-nav"><img src="img/core-img/cart.png" alt=""> Korpa <span>(3)</span></a>
+                <a href="#" class="fav-nav"><img src="img/core-img/favorites.png" alt=""> Sačuvano</a>
+                <a href="#" class="search-nav"><img src="img/core-img/search.png" alt=""> Pretraga</a>
+            </div>
+            <!-- Social Button -->
+            <div class="social-info d-flex justify-content-between">
+                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+        </header>
+        <!-- Header Area End -->
+
+        <div class="cart-table-area section-padding-100">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="checkout_details_area mt-50 clearfix">
+
+                            <div class="cart-title">
+                                <h2><strong>Izmena proizvoda</strong></h2>
+                            </div>
+
+                            <form action="#" method="post">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="product_name"><p>Naziv proizvoda:</p></label>
+                                        <input type="text" class="form-control" id="product_name" value="Beef hrana za psa | Air Dried" placeholder="Naziv proizvoda" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="price"><p>Naziv proizvoda:</p></label>
+                                        <input type="text" class="form-control" id="price" value="1600,00 RSD" placeholder="Cena proizvoda" required>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <label for="status"><p>Status proizvoda:</p></label>
+                                        <select class="w-100" id="status" required>
+                                            <option value="0">Status proizvoda</option>
+                                            <option value="1" selected>Na stanju</option>
+                                            <option value="2">Trenutno nedostupan</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <label for="category"><p>Kategorija:</p></label>
+                                        <select class="w-100" id="category" required>
+                                            <option value="0">Kategorija</option>
+                                            <option value="1" selected>Hrana za pse</option>
+                                            <option value="2">Hrana za mačke</option>
+                                            <option value="3">Akvaristika</option>
+                                            <option value="4">Male životinje</option>
+                                            <option value="5">Ptice</option>
+                                            <option value="6">Teraristika</option>
+                                            <option value="7">Oprema za pse</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label for="description"><p>Opis proizvoda:</p></label>
+                                        <textarea name="description" class="form-control w-100" id="description cols="30" rows="10" placeholder="Sastojci: sušena govedina od Black angusa (33%), brašno od krompira 16%, mešavina povrća (grašak, šargarepa, koren repe, paškanat, praziluk, celer, cikorija) 16%, samleveno proso, seme lana, pirinčane klice, riblje ulje, mešavina osušenog bilja, mešavina algi, hladno ceđeno ulje uljane repice, želatin, osušeni treset, silimarin, sušena juka (Yucca shidigera), jabuke, kruške, žumance, zelena glina. Analitički sastav: sirovi proteini 25,0%, sirove masti 10,0%, sirovi pepeo 7,6%, sirova vlakna 5,9%, kalcijum 1,34%, fosfor 1,11%, natrijum 0,38%, magnezijum 0,09%."></textarea>
+                                    </div>
+                                </div>
+                                <div class="amado-btn-group mt-30 mb-100">
+                                    <button type='submit' class="btn amado-btn mb-15">Sačuvaj izmene</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="cart-summary">
+                            <img class="d-block w-100" src="img/product-img/product-02.jpg" alt="First slide">
+                            <br>
+                            <div class="col-12 mb-3">
+                                <input class="form-control" type="file" id="formFileMultiple" multiple>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Main Content Wrapper End ##### -->
+
+    <!-- ##### Newsletter Area Start ##### -->
+    <section class="newsletter-area section-padding-100-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Newsletter Text -->
+                <div class="col-12 col-lg-6 col-xl-7">
+                    <div class="newsletter-text mb-100">
+                        <h2>Petshop <span>Newsletter</span></h2>
+                        <p>Prijavi se i budi obavešten o svim novim proizvodima izabranog proizvođača</p>
+                    </div>
+                </div>
+                <!-- Newsletter Form -->
+                <div class="col-12 col-lg-6 col-xl-5">
+                    <div class="newsletter-form mb-100">
+                        <form action="#" method="post">
+                            <input type="email" name="email" class="nl-email" placeholder="Email adresa...">
+                            <input type="submit" value="Prijavi se">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Newsletter Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer_area clearfix">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Single Widget Area -->
+                <div class="col-12 col-lg-4">
+                    <div class="single_widget_area">
+                        <!-- Logo -->
+                        <div class="footer-logo mr-50">
+                            <a href="index.html"><img src="img/core-img/logo2.png" alt=""></a>
+                        </div>
+                        <!-- Copywrite Text -->
+                        <p class="copywrite">Copyright &copy;<script>document.write(new Date().getFullYear());</script> Petshop Portal | Sva prava zadržana  <br> Author: Dejan Vujić</a></p>
+                    </div>
+                </div>
+                <!-- Single Widget Area -->
+                <div class="col-12 col-lg-8">
+                    <div class="single_widget_area">
+                        <!-- Footer Menu -->
+                        <div class="footer_menu">
+                            <nav class="navbar navbar-expand-lg justify-content-end">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footerNavContent" aria-controls="footerNavContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+                                <div class="collapse navbar-collapse" id="footerNavContent">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="about-us.html">O nama</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contact.html">Kontakt</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="my-account.html">Moj nalog</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Uslovi korišćenja</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+
+</body>
+
+</html>
